@@ -1,0 +1,23 @@
+/*===================== GOOGLE FONTS =====================*/
+@import url('https://fonts.font.im/css?family=Poppins:400,500,600,700');
+
+/*===================== VARIABLES CSS =====================*/
+:root {
+  /*============ Colors ============*/
+  --first-color: hsl(232, 54%, 43%);
+  --text-color: hsl(232, 8%, 35%);
+  --white-color: hsl(232, 100%, 99%);
+  --body-color: hsl(232, 45%, 90%);
+  --container-color: hsl(232, 54%, 11%);
+}
+
+/*===================== INPUT PASSWORD =====================*/
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
