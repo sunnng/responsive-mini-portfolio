@@ -6,6 +6,7 @@
       <div class="input-body">
         <div class="input-body__main">
           <input type="text" class="input-field" />
+          <div class="input-label">Username</div>
         </div>
       </div>
     </div>
@@ -21,17 +22,41 @@
 }
 
 .input-body {
-  width: 100%;
-  max-width: 376px;
   padding: 0 12px;
-  border-radius: 5px;
-  overflow: hidden;
+  border-radius: 4px;
+  border: 1px solid #9f9f9f;
+}
+
+.input-body {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 376px;
+  min-height: 56px;
+}
+
+.input-body__main {
+  position: relative;
+}
+
+.input-body__main .input-label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.5rem;
+  pointer-events: none;
+  transition: 0.3s;
 }
 
 .input-body__main .input-field {
-  border: 2px solid #9f9f9f;
   padding: 8px 0 8px;
+  border: none;
   outline: none;
+}
+
+.input-field:focus ~ .input-label {
+  background-color: #fff;
+  transform: translateY(-180%);
 }
 /*.input__body {*/
 /*  position: relative;*/
