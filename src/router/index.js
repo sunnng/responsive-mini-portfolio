@@ -16,7 +16,17 @@ const routes = [
     path: '/qr-code',
     name: 'qr-code-generator',
     component: () => import('../components/QRCodeGenerator.vue')
-  }
+  },
+  {
+    path: '/pwd-strength-check',
+    name: 'pwd-strength-check',
+    component: () => import('../components/PasswordStrengthCheck.vue')
+  },
+  {
+    path: '/float-label-input',
+    name: 'float-label-input',
+    component: () => import('../components/FloatLabelInput.vue')
+  },
 ]
 
 const router = createRouter({
